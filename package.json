@@ -9,13 +9,19 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@gravity-ui/uikit": "^7.51.0",
+    "@heroui/react": "^3.2.6",
+    "@heroui/styles": "^3.2.6",
+    "better-auth": "^1.7.7",
     "next": "16.4.0",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "react-marquee-text": "^1.0.6"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
     "babel-plugin-react-compiler": "1.0.0",
+    "daisyui": "^5.7.47",
     "eslint": "^9",
     "eslint-config-next": "16.4.0",
     "tailwindcss": "^4"
