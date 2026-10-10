@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Banner from "./components/Banner";
 
 const HomePage = async ({ searchParams }) => {
   const params = await searchParams;
@@ -65,7 +66,8 @@ const HomePage = async ({ searchParams }) => {
 
   return (
 
-    <>
+    <>  <Banner />
+
       {/*** Price increased top 6 itms maping */}
       <div className='bg-green-50'>
         <h2 className='text-xl font-medium p-5'><span className='text-red-500'>▲ </span>Today&apos;s Price Increases </h2>
