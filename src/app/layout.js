@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
 
           <Navbar />
           <Banner />
-          <HomePage />
+          {/* <HomePage /> */}
 
           {children}
 

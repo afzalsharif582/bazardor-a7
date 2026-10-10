@@ -22,17 +22,9 @@ const GetCategories = async () => {
         } catch (error) {
             throw new Error("Both Categories APIs failed");
         }
-    }console.log("after seting 2api category=", categories );
-    
-
-
-
-
-    // const response = await fetch('https://api.abcz.workers.dev/api/bazardor/categories');
-    // const categories = await response.json();
-
+    }
+    // console.log("after seting 2api category=", categories );
     return <CategoryLinks categories={categories} />;
-
 };
 
 export default GetCategories;
