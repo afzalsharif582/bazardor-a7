@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import CurrentDate from './CurrentDate';
+import LogButtons from './LogButtons';
 
 
 const TopPortion = () => {
@@ -31,12 +32,7 @@ const TopPortion = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="navbar-end ">
-                <div className="menu menu-horizontal items-center gap-5">
-                    <button className="btn btn-ghost">Sign in</button>
-                    <button className="btn rounded-xl bg-green-700 text-sm font-semibold text-white shadow-lg shadow-green-900/20 transition-all duration-200  hover:-translate-y-0.5 hover:bg-green-800 hover:shadow-xl hover:shadow-green-900/25 active:translate-y-0">Sign up</button>
-                </div>
-            </div>
+            <LogButtons/>
         </nav>
     );
 };
