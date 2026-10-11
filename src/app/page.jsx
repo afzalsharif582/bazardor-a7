@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Banner from "./components/Banner";
+import ProductSkeleton from "./components/ProductSkeleton";
+
 
 const HomePage = async ({ searchParams }) => {
   const params = await searchParams;

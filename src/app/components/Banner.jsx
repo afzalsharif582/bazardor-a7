@@ -1,10 +1,16 @@
+"use client";
+
+import { useRef } from "react";
 import Image from "next/image";
 import CurrentDate from "./nav-items/CurrentDate";
 
 const Banner = ({ className = "" }) => {
+
+    const headingRef = useRef(null);
+
     return (
         <section className={`px-4 py-6 sm:px-6 lg:py-10 ${className}`}>
-            
+
             <div className="relative isolate flex w-full flex-col items-center justify-between gap-8 overflow-hidden rounded-3xl border border-green-100/80  bg-linear-to-br from-white via-green-50/80 to-green-100/60 p-6 shadow-xl shadow-green-950/5 transition-all duration-300  hover:shadow-2xl hover:shadow-green-950/10 sm:p-8 lg:flex-row lg:gap-10 lg:p-10 " >
 
                 <div aria-hidden="true"
@@ -32,12 +38,17 @@ const Banner = ({ className = "" }) => {
                         one convenient place.
                     </p>
 
-                    <a href="/items" className="btn rounded-xl mt-10 bg-green-700 text-sm font-semibold text-white shadow-lg shadow-green-900/20 transition-all duration-200  hover:-translate-y-0.5 hover:bg-green-800 hover:shadow-xl hover:shadow-green-900/25 active:translate-y-0"
-                    > Explore Market Prices
-                        <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1"> 
-                            →
-                        </span>
-                    </a>
+
+                    <button onClick={() =>
+                        window.scrollBy({
+                            top: 1400,
+                            behavior: "smooth",
+                        })
+                    } className="btn rounded-xl mt-10 bg-green-700 text-sm font-semibold text-white shadow-lg shadow-green-900/20 transition-all duration-200  hover:-translate-y-0.5 hover:bg-green-800 hover:shadow-xl hover:shadow-green-900/25 active:translate-y-0">Explore Market Prices
+                        <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1">
+                            → </span>
+                    </button>
+
                 </div>
 
                 {/* Hero Image */}

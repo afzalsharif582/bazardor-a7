@@ -7,12 +7,8 @@ export default function NotFound() {
         <p className="text-6xl">🔎</p>
 
         <h1 className="mt-4 text-2xl font-bold">
-          Categori not found!
+          404
         </h1>
-
-        <p className="mt-2 text-gray-500">
-          Your searched category is not found।
-        </p>
 
         <Link
           href="/"
