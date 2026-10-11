@@ -8,13 +8,13 @@ const db = client.db("bazardor-a7-data");
 export const auth = betterAuth({
 
     account: {
-		accountLinking: {
-			enabled: true,
-			// optional: specify trusted providers
-			trustedProviders: ["google", "github"],
-		},
-	},
-    
+        accountLinking: {
+            enabled: true,
+            // optional: specify trusted providers
+            trustedProviders: ["google", "github"],
+        },
+    },
+
     database: mongodbAdapter(db, {
         client,
     }),
@@ -27,7 +27,12 @@ export const auth = betterAuth({
         google: {
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
-        }
+        },
+
+        github: {
+            clientId: process.env.GITHUB_CLIENT_ID,
+            clientSecret: process.env.GITHUB_CLIENT_SECRET,
+        },
     },
 
 
